@@ -1,7 +1,11 @@
 {-# LANGUAGE MultiWayIf #-}
 
 module Task8 ( t8 ) where
-
+{-
+Определите функцию (ЛУКОВИЦА n),
+строящую N-уровневый вложенный список,
+элементом которого на самом глубоком уровне является N.
+-}
 data Onion = Onion Int
              | OnionList [Onion]
              deriving (Show)

@@ -1,7 +1,9 @@
 {-# LANGUAGE MultiWayIf #-}
 
 module Task22 ( t22 ) where
-
+{-
+Определите функцию ОБЬЕДИНЕНИЕ, формирующую обьединение двух множеств.
+-}
 inset :: Eq a => a -> [a] -> Bool
 inset x [] = False
 inset x (item: set) =

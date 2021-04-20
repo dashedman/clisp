@@ -1,7 +1,9 @@
 {-# LANGUAGE MultiWayIf #-}
 
 module Task11 ( t11_1, t11_2 ) where
-
+{-
+Определите функции, осуществляющие преобразование между видами (a b c) и (((а) b) с)
+-}
 data Cascade a = Cascade a
                | CascadeUp [Cascade a]
                deriving (Show)
